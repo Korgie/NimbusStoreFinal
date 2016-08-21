@@ -14,7 +14,7 @@ A python file-storage solution using dropbox and google app engine
 * Create a dropbox account.
 * Create a folder inside your "Public" directory.
 * Create a test file inside that folder, Right-click and view its public url and find out your user-id. (public url will be in the syntax: dl.dropboxusercontent.com/u/\<USERID\>/\<YOURFOLDER\>/testfile)
-* Input user-id and folder-name as variable values in `index.py`.
+* Input user-id and folder-name as variable values in `index.unit`.
 
 ```python
   DROPBOX_USERID = "<USERID>"
@@ -33,7 +33,7 @@ A python file-storage solution using dropbox and google app engine
 
 
 ###Example###
-http://unit-5-project.appspot.com/test
+http://py-storage.appspot.com/test
 
 This serves the file 'test' that is located in the specified folder of my Dropbox's Public directory.
 
