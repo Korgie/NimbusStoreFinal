@@ -33,7 +33,7 @@ A python file-storage solution using dropbox and google app engine
 
 
 ###Example###
-http://py-storage.appspot.com/test
+http://unit-5-project.appspot.com/test
 
 This serves the file 'test' that is located in the specified folder of my Dropbox's Public directory.
 
