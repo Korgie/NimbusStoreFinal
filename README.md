@@ -1,2 +1,45 @@
-# NimbusStoreFinal
-Set up for Nimbus Store
+nimbus store
+=========
+
+A python file-storage solution using dropbox and google app engine 
+
+
+###Services Used###
+* [Dropbox](http://dropbox.com) - to store your files.
+* [Google App Engine](http://appengine.google.com) - python runtime where we implement this handler code.
+
+
+###Environment Build###
+#####Dropbox#####
+* Create a dropbox account.
+* Create a folder inside your "Public" directory.
+* Create a test file inside that folder, Right-click and view its public url and find out your user-id. (public url will be in the syntax: dl.dropboxusercontent.com/u/\<USERID\>/\<YOURFOLDER\>/testfile)
+* Input user-id and folder-name as variable values in `index.py`.
+
+```python
+  DROPBOX_USERID = "<USERID>"
+  DROPBOX_FOLDER = "<YOURFOLDER>"
+```
+
+
+#####Google App Engine#####
+* Create a Google App Engine account.
+* register a unique app-id.
+* now your application will run at \<app-id\>.appspot.com
+* Dowload [Python](http://python.org/download/releases/2.7.4/) and [Google App Engine SDK](http://googleappengine.googlecode.com/files/GoogleAppEngine-1.8.9.msi)
+* Download this project.
+* Select "src" folder as the project folder in the GAE SDK.
+* Deploy it to App Engine.
+
+
+###Example###
+http://py-storage.appspot.com/test
+
+This serves the file 'test' that is located in the specified folder of my Dropbox's Public directory.
+
+
+###Access the files under your own domain###
+* to access the test file as \<files.yourwebsite.com\>/test
+* Login to your App Engine, set custom domain for your app as \<files.yourwebsite.com\>
+* In your website's DNS settings: point CNAME record for \<files.yourwebsite.com\> to ghs.googlehosted.com
+* Finished.

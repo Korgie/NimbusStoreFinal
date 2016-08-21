@@ -1,0 +1,11 @@
+application: likourgosproject-140522
+version: secureable
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /.*
+  script: index.app
+  secure: optional
